@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-feature-settings: normal;
+
+  color: rgba(255, 216, 111, 255);
+}
+
+.App {
+  gap: 0.5rem;
+}
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url("./bg.jpg");
+  width: 100%;
+  height: 100vh;
+  filter: blur(1px);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+.clock {
+  display: flex;
+  gap: 3.4rem;
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+
+.clock > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock > span{
+    color: rgba(255, 216, 111, 255);
+}
+
+.timer-container {
+  display: flex;
+}
+
+.logo {
+  width: 600px;
+  height: 800px;
+  object-fit: cover;
+  filter: brightness(1.1);
+}
+
+.container > h4 {
+  color: rgba(255, 216, 111, 255);
+  font-size: 1.6rem;
+}
+
+.socials > a {
+  margin: 12px;
+}
+
+.socials > a > span > svg:hover {
+  transform: scale(1.1);
+  color: rgba(255, 231, 171, 255);
+}
+
+.year{
+    color: rgba(233, 227, 227, 0.907);
+    -webkit-text-stroke: 1.6px rgba(150,27,175,255);
+}
