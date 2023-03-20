@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 export default function Test() {
     useEffect(() => {
         axios.get(`${BASE_URL}/user/read`)
-            .then(response => console.log(response.data.response))
+            .then(response => console.log(response.data.response))         
     },[])
 
   return (
